@@ -1,0 +1,311 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB Barber - Barbearia</title>
+    
+    <!-- Preload de fontes para melhor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <!-- Preload das imagens para carregamento mais rápido -->
+    <link rel="preload" href="public/images/JB_Barber_Logo.png" as="image">
+    <link rel="preload" href="public/images/barbeiro_crianca.png" as="image">
+    <link rel="preload" href="public/images/hero-bg.png" as="image">
+    
+    <link rel="icon" type="image/png" href="images/JB_Barber_Logo.png">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="/">
+                <img src="images/JB_Barber_Logo.png" alt="JB Barber Logo" class="logo">
+            </a>
+            <div class="menu-icon" id="menuIcon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#sobre" data-i="1">Sobre Nós</a>
+                <a href="#servicos" data-i="2">Serviços</a>
+                <a class="botao primario" data-i="3" href="https://calendly.com/jbbarbearia011" target="_blank" rel="noopener noreferrer">Agendar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>VENHA VIVER ESSA EXPERIÊNCIA</h1>
+            <p class="slogan">Elevando sua auto estima</p>
+            <p class="hero-description">Nosso objetivo é transformar um simples corte em uma experiência que busca conforto e qualidade.</p>
+            <div class="hero-buttons">
+                <a class="botao primario" href="https://calendly.com/jbbarbearia011" target="_blank" rel="noopener noreferrer">AGENDAR AGORA</a>
+                <a href="https://api.whatsapp.com/send/?phone=11971258465&text&type=phone_number&app_absent=0" class="botao whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> FALE CONOSCO
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Corte de Cabelo</h3>
+                    <p>Corte profissional personalizado de acordo com seu estilo.</p>
+                    <p class="service-price">R$ 45,00</p>
+                </div>
+                <div class="service-card">
+                    <h3>Barba</h3>
+                    <p>Modelagem e acabamento perfeito para sua barba.</p>
+                    <p class="service-price">R$ 40,00</p>
+                </div>
+                <div class="service-card">
+                    <h3>Corte e Barba</h3>
+                    <p>Combinação perfeita de corte e barba com preço especial.</p>
+                    <p class="service-price">R$ 90,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">Sobre a JB Barber</h2>
+                    <p>
+                        Somos mais que uma barbearia, somos um espaço dedicado ao cuidado masculino.
+                        Com profissionais altamente qualificados e um ambiente acolhedor, oferecemos
+                        uma experiência única em cada visita.
+                    </p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Profissionais Experientes</li>
+                        <li><i class="fas fa-check"></i> Ambiente Climatizado</li>
+                        <li><i class="fas fa-check"></i> Produtos de Alta Qualidade</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="images/hero-bg.png" alt="Corte de cabelo moderno">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/hero-bg1.png" alt="Corte fade">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/hero-bg2.png" alt="Barba estilizada">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/hero-bg3.png" alt="Corte clássico">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                            <div class="carousel-dots">
+                                <span class="dot active" data-slide="0"></span>
+                                <span class="dot" data-slide="1"></span>
+                                <span class="dot" data-slide="2"></span>
+                                <span class="dot" data-slide="3"></span>
+                            </div>
+                            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="images/JB_Barber_Logo.png" alt="JB Barber Logo">
+                    <p>Transformando seu visual com excelência e profissionalismo.</p>
+                    <p class="slogan">Elevando sua auto estima</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> 11 97125-8465</p>
+                    <p><i class="fas fa-envelope"></i> contato@jbbarber.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. do Oratório, 4449 - Vila Nova Pauliceia, São Paulo - SP, 03221-200</p>
+                    <a href="https://api.whatsapp.com/send/?phone=11971258465&text&type=phone_number&app_absent=0" class="botao whatsapp">
+                        <i class="fab fa-whatsapp"></i> Fale conosco pelo WhatsApp
+                    </a>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/jb.barber0/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=11971258465&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 JB Barber. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Adicionando script para o menu mobile -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navLinks = document.querySelector('.nav-links');
+            
+            menuIcon.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                const icon = menuIcon.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            // Fechar menu ao clicar em um link
+            const navLinkItems = document.querySelectorAll('.nav-links a');
+            navLinkItems.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Fechar menu mobile
+                    navLinks.classList.remove('active');
+                    const icon = menuIcon.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                    
+                    // Scroll suave para links internos
+                    const href = this.getAttribute('href');
+                    if (href.startsWith('#')) {
+                        e.preventDefault();
+                        const targetSection = document.querySelector(href);
+                        if (targetSection) {
+                            window.scrollTo({
+                                top: targetSection.offsetTop - 70,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+            
+            // Inicializar carrossel
+            const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+            const nextButton = document.querySelector('.carousel-btn.next');
+            const prevButton = document.querySelector('.carousel-btn.prev');
+            const dotsNav = document.querySelector('.carousel-dots');
+            const dots = Array.from(document.querySelectorAll('.dot'));
+            
+            if (slides.length > 0 && dotsNav) {
+                // Marcar o primeiro slide como ativo
+                slides[0].classList.add('active');
+                
+                // Mover para slide
+                const moveToSlide = (currentSlide, targetSlide) => {
+                    currentSlide.classList.remove('active');
+                    targetSlide.classList.add('active');
+                };
+                
+                // Atualizar dots
+                const updateDots = (currentDot, targetDot) => {
+                    currentDot.classList.remove('active');
+                    targetDot.classList.add('active');
+                };
+                
+                // Obter o slide ativo atual
+                const getCurrentSlide = () => {
+                    const activeSlide = document.querySelector('.carousel-slide.active');
+                    return activeSlide || slides[0];
+                };
+                
+                // Botão próximo
+                nextButton.addEventListener('click', () => {
+                    const currentSlide = getCurrentSlide();
+                    const currentIndex = slides.indexOf(currentSlide);
+                    const nextIndex = (currentIndex + 1) % slides.length;
+                    
+                    const currentDot = dotsNav.querySelector('.active');
+                    const nextDot = dots[nextIndex];
+                    
+                    moveToSlide(currentSlide, slides[nextIndex]);
+                    updateDots(currentDot, nextDot);
+                });
+                
+                // Botão anterior
+                prevButton.addEventListener('click', () => {
+                    const currentSlide = getCurrentSlide();
+                    const currentIndex = slides.indexOf(currentSlide);
+                    const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+                    
+                    const currentDot = dotsNav.querySelector('.active');
+                    const prevDot = dots[prevIndex];
+                    
+                    moveToSlide(currentSlide, slides[prevIndex]);
+                    updateDots(currentDot, prevDot);
+                });
+                
+                // Dots de navegação
+                dotsNav.addEventListener('click', e => {
+                    const targetDot = e.target.closest('span');
+                    
+                    if (!targetDot) return;
+                    
+                    const currentSlide = getCurrentSlide();
+                    const currentDot = dotsNav.querySelector('.active');
+                    const targetIndex = dots.findIndex(dot => dot === targetDot);
+                    const targetSlide = slides[targetIndex];
+                    
+                    moveToSlide(currentSlide, targetSlide);
+                    updateDots(currentDot, targetDot);
+                });
+                
+                // Auto-play do carrossel
+                let slideInterval = setInterval(() => {
+                    const currentSlide = getCurrentSlide();
+                    const currentIndex = slides.indexOf(currentSlide);
+                    const nextIndex = (currentIndex + 1) % slides.length;
+                    
+                    const currentDot = dotsNav.querySelector('.active');
+                    const nextDot = dots[nextIndex];
+                    
+                    moveToSlide(currentSlide, slides[nextIndex]);
+                    updateDots(currentDot, nextDot);
+                }, 5000);
+                
+                // Pausar autoplay quando o mouse estiver sobre o carrossel
+                const carousel = document.querySelector('.image-carousel');
+                carousel.addEventListener('mouseenter', () => {
+                    clearInterval(slideInterval);
+                });
+                
+                carousel.addEventListener('mouseleave', () => {
+                    slideInterval = setInterval(() => {
+                        const currentSlide = getCurrentSlide();
+                        const currentIndex = slides.indexOf(currentSlide);
+                        const nextIndex = (currentIndex + 1) % slides.length;
+                        
+                        const currentDot = dotsNav.querySelector('.active');
+                        const nextDot = dots[nextIndex];
+                        
+                        moveToSlide(currentSlide, slides[nextIndex]);
+                        updateDots(currentDot, nextDot);
+                    }, 5000);
+                });
+            }
+        });
+    </script>
+
+ </body></html>
